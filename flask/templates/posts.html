@@ -1,0 +1,19 @@
+{% extends 'Base.html' %}
+
+{% block head %}
+<title>Belajar | posts </title>
+{% endblock %}
+
+{% block body %}
+<h1>Post</h1>
+
+    {% for post in data %}
+        <h2>{{post.judul}}</h2>
+        {% if post.pengarang %}
+            <h3>By: {{post.pengarang}}</h3>
+        {% else %}
+            <h3>By: N/A </h3>
+        {% endif %}
+        <p>{{post.konten}}</p>
+    {% endfor %}
+{% endblock %}
