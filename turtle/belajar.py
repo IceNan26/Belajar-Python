@@ -68,8 +68,7 @@ for i in range(100):
 objek.penup()
 objek.right(180)
 objek.forward(300)
-objek.pendown()
-for i in range(2000):
-    objek.forward(20)
-    objek.right(math.sin(i / random.randint(2,3000))*3)
+for i in range(20):
+    objek.forward(100)
+    objek.right(145)
 turtle.done()
