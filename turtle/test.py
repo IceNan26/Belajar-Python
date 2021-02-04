@@ -1,3 +1,7 @@
 import turtle
 
-turtle = turtle.Turtle()
+test = turtle.Turtle()
+
+test.forward(100)
+
+turtle.done()
